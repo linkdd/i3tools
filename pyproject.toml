@@ -1,0 +1,40 @@
+[project]
+name = "i3tools"
+version = "0.2.0"
+description = "Tools for i3wm"
+authors = [
+    {name = "David Delassus", email = "david.jose.delassus@gmail.com"},
+]
+
+license = {text = "MIT"}
+readme = "README.rst"
+
+keywords = ["i3wm"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Unix",
+    "Operating System :: POSIX :: Linux",
+    "Topic :: Utilities",
+    "Topic :: Desktop Environment",
+    "Intended Audience :: End Users/Desktop",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+
+dependencies = []
+requires-python = ">=3.13"
+
+[project.urls]
+homepage = "https://github.com/linkdd/i3tools"
+
+[project.scripts]
+i3ws = "i3tools.ws:main"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
